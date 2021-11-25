@@ -1,3 +1,3 @@
-const id = 'simple.extension';
+const id = "extension.clock";
 
 export default id;
