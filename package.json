@@ -1,11 +1,11 @@
 {
   "name": "@ohif-test/extension-clock",
-  "version": "1.0.2",
+  "version": "1.0.7",
   "description": "A test extension to showcase mode/extension installations",
   "author": "OHIF Core Team",
   "license": "MIT",
   "repository": "OHIF/Viewers",
-  "main": "src/index.js",
+  "main": "dist/index.umd.js",
   "module": "src/index.js",
   "publishConfig": {
     "access": "public"
