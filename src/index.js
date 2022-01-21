@@ -1,6 +1,6 @@
-import getPanelModule from './getPanelModule.js';
-import commandsModule from './commandsModule';
-import id from './id';
+import getPanelModule from "./getPanelModule.js";
+import commandsModule from "./commandsModule";
+import id from "./id";
 
 export default {
   /**
