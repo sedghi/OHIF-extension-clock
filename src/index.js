@@ -3,7 +3,7 @@ import commandsModule from "./commandsModule";
 
 // TODO -> Inject these using webpack from package.json
 const id = "@ohif-test/extension-clock";
-const version = "1.0.5";
+const version = "1.0.6";
 
 export default {
     /**
