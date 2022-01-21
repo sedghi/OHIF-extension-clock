@@ -1,6 +1,6 @@
 {
   "name": "@ohif-test/extension-clock",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A test extension to showcase mode/extension installations",
   "author": "OHIF Core Team",
   "license": "MIT",
