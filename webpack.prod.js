@@ -15,6 +15,16 @@ const config = {
     umdNamedDefine: true,
     globalObject: "typeof self !== 'undefined' ? self : this",
   },
+  externals: [
+    {
+      react: {
+        root: "React",
+        commonjs2: "react",
+        commonjs: "react",
+        amd: "react",
+      },
+    },
+  ],
   module: {
     rules: [
       {
@@ -34,7 +44,7 @@ const config = {
   },
   resolve: {
     modules: [path.resolve("./node_modules"), path.resolve("./src")],
-    extensions: [".json", ".js"],
+    extensions: [".json", ".js", ".jsx"],
   },
 };
 
