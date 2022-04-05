@@ -1,16 +1,19 @@
 import getPanelModule from './getPanelModule.js';
 import commandsModule from './commandsModule';
 
-// TODO -> Inject these using webpack from package.json
-const id = '@ohif-test/extension-clock';
-const version = '1.0.10';
+import { id, version } from './id';
 
+/**
+ * You can remove any of the following modules if you don't need them.
+ */
 export default {
   /**
-   * Only to required properties. Should be a unique value across all extensions.
+   * Only required property. Should be a unique value across all extensions.
+   * You ID can be anything you want, but it should be unique.
    */
   id,
   version,
+
   getPanelModule,
   getCommandsModule({ servicesManager, commandsManager }) {
     return commandsModule({ servicesManager, commandsManager });
