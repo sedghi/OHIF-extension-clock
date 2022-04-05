@@ -1,1 +1,7 @@
-# OHIF-extension-clock
+# my-extension 
+## Description 
+ 
+## Author 
+ 
+## License 
+MIT

@@ -1,3 +1,3 @@
-import PanelClock from "./PanelClock";
+import PanelClock from './PanelClock';
 
 export { PanelClock };

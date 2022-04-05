@@ -1,40 +1,48 @@
 {
   "name": "@ohif-test/extension-clock",
-  "version": "1.0.10",
-  "description": "A test extension to showcase mode/extension installations",
-  "author": "OHIF Core Team",
+  "version": "3.1.0",
+  "description": "",
+  "author": "",
   "license": "MIT",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "repository": "OHIF/Viewers",
+  "keywords": [
+    "ohif-extension"
+  ],
   "main": "dist/index.umd.js",
   "module": "src/index.js",
-  "publishConfig": {
-    "access": "public"
-  },
   "engines": {
     "node": ">=10",
     "npm": ">=6",
     "yarn": ">=1.18.0"
   },
-  "keywords": [
-    "ohif-extension"
-  ],
-  "files": [
-    "dist",
-    "README.md"
-  ],
   "scripts": {
-    "dev": "yarn run dev",
-    "build": "cross-env NODE_ENV=production webpack --config ./webpack.prod.js",
+    "dev": "cross-env NODE_ENV=development webpack --config .webpack/webpack.dev.js --watch --debug --output-pathinfo",
+    "dev:dicom-pdf": "yarn run dev",
+    "build": "cross-env NODE_ENV=production webpack --config .webpack/webpack.prod.js",
     "build:package": "yarn run build",
     "start": "yarn run dev"
   },
   "peerDependencies": {
-    "@ohif/core": "^2.12.3",
+    "@ohif-test/extension-clock": "1.0.10",
+    "@ohif/extension-default": "^1.0.1",
+    "@ohif/extension-cornerstone": "^3.0.0",
+    "@ohif/core": "^3.0.0",
+    "@ohif/i18n": "^0.52.8",
+    "prop-types": "^15.6.2",
+    "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-i18next": "^10.11.0",
-    "react-router": "^6.12.1",
-    "react-router-dom": "^6.12.1",
-    "react": "^17.0.2"
+    "react-router": "^6.2.1",
+    "react-router-dom": "^6.2.1",
+    "webpack": "^5.50.0",
+    "webpack-merge": "^5.7.3"
+  },
+  "dependencies": {
+    "@babel/runtime": "7.7.6"
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",
@@ -58,8 +66,5 @@
     "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "^4.12.2",
     "webpack-cli": "^3.0.8"
-  },
-  "dependencies": {
-    "@babel/runtime": "7.7.6"
   }
 }
