@@ -1,3 +1,6 @@
+import getPanelModule from './getPanelModule.js';
+import commandsModule from './commandsModule';
+
 import { id, version } from './id';
 
 /**
