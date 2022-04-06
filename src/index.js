@@ -1,7 +1,7 @@
 import getPanelModule from './getPanelModule.js';
 import commandsModule from './commandsModule';
 
-import { id, version } from './id';
+import { id } from './id';
 
 /**
  * You can remove any of the following modules if you don't need them.
@@ -12,7 +12,6 @@ export default {
    * You ID can be anything you want, but it should be unique.
    */
   id,
-  version,
 
   getPanelModule,
   getCommandsModule({ servicesManager, commandsManager }) {
