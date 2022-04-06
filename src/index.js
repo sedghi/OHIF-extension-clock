@@ -5,6 +5,7 @@ import { id } from './id';
 
 /**
  * You can remove any of the following modules if you don't need them.
+ * You can remove any of the following modules if you don't need them.
  */
 export default {
   /**
